@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Strategy &amp; Leadership in a Digital World · MBA Elective · Key takeaways from five sessions with Naveed Sultan</title>
+<meta name="description" content="Reflections and key takeaways from the MBA elective 'Strategy and Leadership in a Digital World' at Imperial College Business School, taught by Naveed Sultan, former Chairman of Citi: five sessions on digital transformation, platforms, AI, the future of money, and pro-human leadership." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #eaf1f8;
+    --ink: #0f1e30;
+    --muted: #4f6479;
+    --rule: #d3e0ec;
+    --accent: #003e74;
+    --accent-soft: #d6e4f1;
+    --accent-warm: #b87333;
+    --paper: #ffffff;
+    --shadow: 0 1px 2px rgba(0, 30, 70, .05), 0 8px 24px rgba(0, 30, 70, .08);
+    --shadow-lift: 0 4px 8px rgba(0, 30, 70, .08), 0 20px 40px rgba(0, 30, 70, .12);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    background: rgba(234, 241, 248, 0.82);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid var(--rule);
+    z-index: 50;
+    transition: box-shadow .3s ease;
+  }
+  .nav.scrolled { box-shadow: 0 4px 20px rgba(0, 30, 70, .06); }
+  .nav-links a { position: relative; }
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 1px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s cubic-bezier(.2,.8,.2,1);
+  }
+  .nav-links a:hover::after { transform: scaleX(1); }
+  .nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .brand {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .brand .dot { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .nav-links a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .2s ease;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  @media (max-width: 860px) { .nav-links { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 80px 28px 60px;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--accent);
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin: 0 0 28px;
+    max-width: 940px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 400;
+  }
+  .lede {
+    font-size: 20px;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 740px;
+    margin: 0 0 36px;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .meta span strong {
+    color: var(--ink);
+    font-weight: 600;
+    margin-right: 6px;
+  }
+
+  /* ---------- HERO IMAGE ---------- */
+  .hero-image {
+    max-width: 980px;
+    margin: 0 auto 80px;
+    padding: 0 28px;
+  }
+  .hero-image figure {
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--accent-soft);
+    aspect-ratio: 16 / 9;
+    transition: box-shadow .5s ease;
+  }
+  .hero-image figure:hover { box-shadow: var(--shadow-lift); }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(.2,.8,.2,1);
+  }
+  .hero-image figure:hover img { transform: scale(1.04); }
+  .hero-image figcaption {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* ---------- ARTICLE ---------- */
+  .article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .article p { margin: 0 0 22px; }
+  .article p.first::first-letter {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 64px;
+    line-height: 0.9;
+    float: left;
+    padding: 6px 12px 0 0;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ---------- PROFESSOR CARD ---------- */
+  .prof {
+    max-width: 720px;
+    margin: 40px auto 0;
+    padding: 26px 30px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 30, 70, .03);
+  }
+  .prof .tag {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .prof h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 10px;
+  }
+  .prof p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+  /* ---------- PULL QUOTE ---------- */
+  .pullquote {
+    margin: 48px -40px;
+    padding: 32px 40px;
+    border-left: 3px solid var(--accent);
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  @media (max-width: 720px) {
+    .pullquote { margin: 36px 0; padding: 20px 0 20px 24px; font-size: 20px; }
+  }
+
+  /* ---------- FIGURE ---------- */
+  figure.inline {
+    margin: 32px auto;
+    max-width: 560px;
+  }
+  figure.inline .frame {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    background: var(--accent-soft);
+    transition: box-shadow .4s ease, transform .4s ease;
+  }
+  figure.inline:hover .frame {
+    box-shadow: var(--shadow-lift);
+    transform: translateY(-3px);
+  }
+  figure.inline img {
+    width: 100%;
+    display: block;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  figure.inline:hover img { transform: scale(1.04); }
+  figure.inline figcaption {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* ---------- DUO IMAGE ---------- */
+  .duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 32px auto;
+    max-width: 720px;
+  }
+  .duo .frame {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    aspect-ratio: 4 / 3;
+    background: var(--accent-soft);
+    transition: box-shadow .4s ease, transform .4s ease;
+  }
+  .duo .frame:hover {
+    box-shadow: var(--shadow-lift);
+    transform: translateY(-3px);
+  }
+  .duo .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  .duo .frame:hover img { transform: scale(1.05); }
+  @media (max-width: 560px) {
+    .duo { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- LEARNINGS SECTION ---------- */
+  .learnings {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .learnings > h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 60px auto 20px;
+    max-width: 720px;
+  }
+  .learnings > .section-lede {
+    max-width: 720px;
+    margin: 0 auto 36px;
+    color: var(--muted);
+    font-size: 17px;
+  }
+
+  /* ---------- DAY CARD ---------- */
+  .day-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 48px 64px;
+    margin: 28px 0;
+    box-shadow: 0 1px 2px rgba(0, 30, 70, .03);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, border-color .4s ease;
+  }
+  .day-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lift);
+    border-color: var(--accent-soft);
+  }
+  .day-card > h3,
+  .day-card > h4,
+  .day-card > p,
+  .day-card > .insights,
+  .day-card > .reflection,
+  .day-card > .guest-card,
+  .day-card > figure.inline,
+  .day-card > .duo {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .day-card > h3 {
+    margin: 0 auto 24px;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .day-card > h3 .day {
+    display: block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--accent-warm);
+    margin-bottom: 8px;
+  }
+  .day-card > h4 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    margin: 34px auto 14px;
+  }
+  .day-card > p { margin-top: 0; margin-bottom: 20px; }
+  @media (max-width: 720px) {
+    .day-card { padding: 32px 24px; }
+    .day-card > h3 { font-size: 24px; }
+  }
+
+  /* ---------- INSIGHT CHIPS ---------- */
+  .insights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 8px auto 28px;
+  }
+  .insight {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 16px;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, var(--accent-soft) 0%, #f0f6fb 100%);
+    border-radius: 6px;
+    align-items: start;
+  }
+  .insight .num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .insight .num small {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 2px;
+    opacity: .75;
+  }
+  .insight .body {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .insight .body strong {
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  /* ---------- REFLECTION BLOCK ---------- */
+  .reflection {
+    margin-top: 28px;
+    padding: 26px 30px;
+    background: #fbf7f1;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-warm);
+  }
+  .reflection h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent-warm);
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .reflection p { margin: 0 0 14px; font-size: 16px; }
+  .reflection p:last-child { margin-bottom: 0; }
+  @media (max-width: 720px) {
+    .reflection { padding: 22px 20px; }
+  }
+
+  /* ---------- GUEST CARD ---------- */
+  .guest-card {
+    background: var(--paper);
+    border: 1px dashed var(--accent-soft);
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin: 24px auto;
+  }
+  .guest-card .tag {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .guest-card h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0 0 10px;
+  }
+  .guest-card .by {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 14px;
+    font-style: italic;
+  }
+  .guest-card p {
+    margin: 0 0 12px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .guest-card p:last-child { margin-bottom: 0; }
+  @media (max-width: 720px) { .guest-card { padding: 22px 20px; } }
+
+  /* ---------- PRINCIPLES GRID ---------- */
+  .principles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 720px;
+    margin: 0 auto 8px;
+  }
+  .principle {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, var(--accent-soft) 0%, #f0f6fb 100%);
+    border-radius: 8px;
+  }
+  .principle h5 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .principle p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--ink); }
+  @media (max-width: 560px) { .principles { grid-template-columns: 1fr; } }
+
+  /* ---------- GALLERY ---------- */
+  .gallery-section {
+    max-width: 1000px;
+    margin: 80px auto 0;
+    padding: 0 28px;
+  }
+  .gallery-head {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .gallery-head h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+  }
+  .gallery-head p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 16px;
+  }
+  .gallery-solo figure {
+    margin: 0 auto;
+    max-width: 880px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    aspect-ratio: 16 / 9;
+    background: var(--accent-soft);
+    transition: box-shadow .4s ease, transform .4s ease;
+  }
+  .gallery-solo figure:hover {
+    box-shadow: var(--shadow-lift);
+    transform: translateY(-3px);
+  }
+  .gallery-solo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(.2,.8,.2,1);
+  }
+  .gallery-solo figure:hover img { transform: scale(1.04); }
+
+  /* ---------- CLOSING ---------- */
+  .closing {
+    max-width: 720px;
+    margin: 80px auto 0;
+    padding: 0 28px;
+    text-align: center;
+  }
+  .closing h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .closing p {
+    color: var(--muted);
+    font-size: 17px;
+  }
+
+  /* ---------- EMAIL CTA ---------- */
+  .email-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+    padding: 16px 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 4px 16px rgba(0, 62, 116, 0.25);
+    transition: transform .3s cubic-bezier(.2,.8,.2,1), box-shadow .3s ease, background-color .3s ease;
+  }
+  .email-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0, 62, 116, 0.35);
+    background: #002c54;
+  }
+  .email-cta-arrow { transition: transform .3s cubic-bezier(.2,.8,.2,1); display: inline-block; }
+  .email-cta:hover .email-cta-arrow { transform: translateX(4px); }
+
+  /* ---------- SCROLL REVEAL ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1);
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    margin-top: 80px;
+    padding: 40px 28px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer .divider {
+    width: 40px;
+    height: 1px;
+    background: var(--rule);
+    margin: 0 auto 20px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">Strategy &amp; Leadership in a Digital World <span class="dot">·</span> MBA Elective</div>
+    <div class="nav-links">
+      <a href="#story">Story</a>
+      <a href="#s1">Session 1</a>
+      <a href="#s2">Session 2</a>
+      <a href="#s3">Session 3</a>
+      <a href="#s4">Session 4</a>
+      <a href="#s5">Session 5</a>
+      <a href="#reflection">Closing</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">MBA Elective · Imperial College Business School · 2025</div>
+  <h1>What five sessions on <em>Strategy &amp; Leadership in a Digital World</em> taught me.</h1>
+  <p class="lede">
+    Key takeaways from an MBA elective with Naveed Sultan, former Chairman of Citi, on why digital transformation
+    is not a technology upgrade but a fundamental shift in how economies, companies, and leaders create value.
+    Across five sessions, five guest speakers brought the theory into the field, from the history of money and
+    banking to fintech strategy, McKinsey's transformation playbook, the AI-driven future of work, and the path to
+    the future financial system.
+  </p>
+  <div class="meta">
+    <span><strong>Author</strong>Yuanzhen Cai</span>
+    <span><strong>Programme</strong>Imperial College London · MBA</span>
+    <span><strong>Course</strong>Strategy &amp; Leadership in a Digital World</span>
+    <span><strong>Instructor</strong>Naveed Sultan</span>
+  </div>
+</header>
+
+<div class="hero-image">
+  <figure><img src="images/group-photo-1.jpg" alt="Cohort group photo, Strategy and Leadership in a Digital World elective" /></figure>
+  <figcaption>The cohort, Strategy &amp; Leadership in a Digital World, Imperial College Business School.</figcaption>
+</div>
+
+<article class="article" id="story">
+  <p class="first">
+    Digital transformation is not merely a technology upgrade. It is a fundamental shift in how economies, financial
+    systems, companies, and leaders create value. Across five sessions, that single idea was pressed from every angle:
+    the macro forces reshaping the economy, the case studies of incumbents who adapted and incumbents who did not, and
+    the kind of leadership the moment demands. At its core, the course argued for a new kind of leader, one grounded
+    in sharp environmental awareness, the ability to imagine bold possibilities, cross-disciplinary thinking, and a
+    relentless focus on delivering meaningful outcomes.
+  </p>
+
+  <div class="prof">
+    <span class="tag">Your instructor</span>
+    <h3>Naveed Sultan</h3>
+    <p>
+      Former Chairman of Citi and architect of Citi's Treasury and Trade Solutions transformation, the case study
+      that anchors Session 4. He brings the rare combination of having run a $12&nbsp;billion global platform business
+      and the patience to teach the leadership principles that made it possible.
+    </p>
+  </div>
+</article>
+
+<section class="learnings" id="learnings">
+
+  <!-- ============ SESSION 1 ============ -->
+  <section class="day-card" id="s1">
+    <h3><span class="day">Session 1 · April 30</span>The Fifth Industrial Revolution, and a new kind of leadership</h3>
+
+    <p>
+      We opened on the largest possible canvas. We are living through the Fifth Industrial Revolution, an era defined
+      by the convergence of physical, digital, and biological technologies, generating possibilities that were
+      unimaginable a decade ago. It brings disruption, yes, but more importantly it opens vast new space for innovative
+      business models, intensified competition, and entirely new sources of economic value.
+    </p>
+
+    <h4>Finance, unbundled</h4>
+    <p>
+      Nowhere is this disruption more visible than in financial services, historically one of the most friction-laden
+      sectors in the global economy. Banking is being unbundled by software, data, AI, mobile access, digital wallets,
+      blockchain, smart contracts, APIs, and cloud infrastructure. Traditional "pipeline" models, where firms produce
+      and customers passively consume, are giving way to network, platform, and ecosystem models. Competitive advantage
+      now lies less in owning assets and more in designing powerful digital platforms, building resilient operational
+      backbones, deploying data intelligently, and participating actively in broader ecosystems.
+    </p>
+
+    <div class="insights">
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>01</div>
+        <div class="body"><strong>Digital transformation is a leadership challenge, not a technical one.</strong> It demands environmental awareness, bold imagination, cross-disciplinary thinking, and a focus on outcomes.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>02</div>
+        <div class="body"><strong>Advantage shifts from owning assets to orchestrating platforms.</strong> Networks, data, and ecosystem participation now create value where balance sheets once did.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>03</div>
+        <div class="body"><strong>AI is transformative, and ethically loaded.</strong> Leaders must pair technological literacy with critical thinking, curiosity, empathy, and judgment, and demand that developers disclose model risks and limitations.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>04</div>
+        <div class="body"><strong>Digital policy is a third policy lever</strong>, alongside monetary and fiscal, broadening the formal economy, advancing inclusion, and governing CBDCs, digital identity, open banking, and tokenisation.</div>
+      </div>
+    </div>
+
+    <p>
+      The point about AI was brought to life in the room: when we compared our own solution to the UK social housing
+      crisis with one generated by Claude AI, ours proved demonstrably more holistic, human-centred, and contextually
+      nuanced, a reminder that judgment, not just generation, is where leaders earn their place.
+    </p>
+
+    <figure class="inline">
+      <div class="frame"><img src="images/session1.jpg" alt="Session 1 in progress" /></div>
+      <figcaption>Session 1, setting the frame for the digital economy.</figcaption>
+    </figure>
+
+    <div class="guest-card">
+      <div class="tag">Guest Lecture</div>
+      <h4>Money, banking, and the shifting substrate</h4>
+      <p class="by">Tony McLaughlin, CEO of Ubyx.</p>
+      <p>
+        Tony's central argument: the core function of banking has not changed. Banks still create credit by managing
+        the mismatch between short-term liabilities and long-term, uncertain assets. What has changed is the underlying
+        infrastructure, the "substrate." Records have migrated from paper ledgers to mainframe databases, and are now
+        moving toward cloud platforms and public blockchain infrastructure.
+      </p>
+      <p>
+        Crucially, blockchains should be understood not primarily as cryptocurrencies or payment rails, but as shared
+        "who-owns-what" machines. Banks may well remain central, but the customer interface is shifting, from
+        traditional accounts toward wallets, stablecoins, tokenised deposits, programmable money, and agent-based commerce.
+      </p>
+    </div>
+
+    <figure class="inline">
+      <div class="frame"><img src="images/session1-guest.jpg" alt="Session 1 guest speaker" /></div>
+      <figcaption>The Session 1 guest speaker addressing the cohort.</figcaption>
+    </figure>
+
+    <div class="reflection">
+      <h5>For Laerdal Medical</h5>
+      <p>
+        Digital change is a strategic and leadership challenge, not a technical one, and the platform lesson is the
+        one I'd flag for us. Laerdal still sells largely as <em>products</em>: manikins, trainers, devices. The
+        session's argument is that durable advantage is migrating to platforms, data, and ecosystems. We already have
+        the pieces (SimCapture, LLEAP, scenario libraries, performance data), and the opportunity is to connect them
+        into a single learning ecosystem where the data we capture (CPR quality, scenario outcomes) becomes the
+        differentiator, not the hardware alone.
+      </p>
+      <p>
+        And as we put more AI into skills feedback and debriefing, we should hold our own AI suppliers to the standard
+        the session set: insist on clear disclosure of what the models can and cannot reliably judge in a
+        clinical-education setting, so educators keep informed judgment in the loop.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SESSION 2 ============ -->
+  <section class="day-card" id="s2">
+    <h3><span class="day">Session 2 · May 7</span>The Washington Post, and the discipline of product</h3>
+
+    <p>
+      The Washington Post case is a study in the evolution of journalism, driven by a complex interplay of technology,
+      economics, regulation, consumer behaviour, competition, and politics. The Post faces a defining strategic
+      inflection point: to survive and grow, it must evolve from a legacy print institution into a digital,
+      product-driven media and technology company. Print readership is shrinking, advertising revenue eroding, and
+      competition from social platforms intensifying. In response, the Post made substantial bets on digital
+      subscriptions, mobile-first products, data capabilities, agile teams, and homegrown technologies such as Arc XP
+      and Zeus.
+    </p>
+    <p>
+      Its most critical challenge is winning over younger audiences, particularly Gen Z, who encounter news through
+      social media rather than seeking out traditional brands. The path forward requires holding two things in balance:
+      maintaining a reputation for rigorous, trustworthy journalism while aggressively modernising how it builds
+      products, reaches audiences, and monetises content.
+    </p>
+
+    <h4>Broader lessons</h4>
+    <div class="insights">
+      <div class="insight">
+        <div class="num"><small>Lesson</small>01</div>
+        <div class="body"><strong>Solutions must fit the organisation's strategy, resources, and threats.</strong> The right approach depends on where the company stands in its environment at any given moment.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Lesson</small>02</div>
+        <div class="body"><strong>Decisions are shaped by the human element</strong>, departmental biases between editorial, engineering, and marketing. Strong leaders navigate these internal tensions.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Lesson</small>03</div>
+        <div class="body"><strong>SaaS principles translate broadly</strong>, regardless of industry or business model. Product-management thinking is no longer confined to tech.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Lesson</small>04</div>
+        <div class="body"><strong>Capturing attention is now a shared goal across business models</strong>, but the ethical boundaries of influencing user behaviour, and the responsibility for misinformation, remain unresolved.</div>
+      </div>
+    </div>
+
+    <p>
+      We also worked three critical-thinking exercises grounded in real dilemmas: a dairy company's supply chain, a
+      hospital group's sustainability strategy under investor pressure, and an SME financing gap. In each case, the
+      class's solutions were more thoughtful and impactful than conventional approaches, underscoring the value of
+      ingenuity and critical analysis applied to complex problems.
+    </p>
+
+    <div class="guest-card">
+      <div class="tag">Guest Lecture</div>
+      <h4>Three waves: cloud, mobile, and AI</h4>
+      <p class="by">Don Hoang, former executive at Uber and Revolut, and venture capitalist.</p>
+      <p>
+        Don identified the common thread: the most successful digital businesses are built by recognising everyday
+        friction, reimagining the experience from the ground up, and aligning technology with a scalable business
+        model. Uber didn't simply digitise taxi-hailing, it wove together GPS, smartphones, payments, and marketplace
+        dynamics to eliminate friction in urban transport. Revolut started with a narrow pain point in foreign exchange
+        and expanded into a full financial superapp.
+      </p>
+      <p>
+        In both cases the consumer-facing product is only the surface. The deeper advantage lies in operational
+        discipline, regulatory navigation, shipping speed, and accumulated trust: the value-creation cycle of
+        observation, imagination, connecting the dots, and creating value. The same logic now applies to AI, but
+        faster: sustainable value will flow not from models alone, but from combining them with proprietary context,
+        deep workflow integration, distribution reach, and hard-won trust.
+      </p>
+    </div>
+
+    <figure class="inline">
+      <div class="frame"><img src="images/session2-guest.jpg" alt="Session 2 guest speaker, Don Hoang" /></div>
+      <figcaption>Don Hoang presenting in Session 2.</figcaption>
+    </figure>
+
+    <div class="reflection">
+      <h5>For Laerdal Medical</h5>
+      <p>
+        Two practical moves. First, product-management discipline shouldn't live only in R&amp;D: the SaaS playbook of
+        continuous iteration, usage data, and tight feedback loops applies to how we build and sell across the whole
+        company. Second, our future customers are Gen&nbsp;Z nurses and clinicians who learn on their phones and through
+        social channels. The Washington Post's challenge is ours: keep the clinical credibility and AHA-aligned trust
+        that <em>is</em> our brand, while modernising how we reach, onboard, and engage a younger healthcare workforce.
+      </p>
+      <p>
+        Don Hoang's friction test makes a good weekly question for us: what do clinical educators currently put up with
+        that they shouldn't have to? The friction we remove from their workflow, not the next feature, is where the
+        next product lives.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SESSION 3 ============ -->
+  <section class="day-card" id="s3">
+    <h3><span class="day">Session 3 · May 14</span>Majid Al Futtaim, and why transformations fail</h3>
+
+    <p>
+      The session grounded transformation in the Majid Al Futtaim (MAF) case, a Dubai-based holding company operating
+      malls, retail, and leisure across the MENA region. Digital transformation was defined as the integration of
+      technology into all aspects of a business, creating fundamental changes in operating processes and in the value
+      proposition to customers, with advanced analytics treated as a core component: data increasingly functions as a
+      strategic asset.
+    </p>
+    <p>
+      MAF organised its transformation around four building blocks: change management; data and technology; people
+      capability; and decision support and use cases. A particularly important innovation was the distinction between
+      a central <strong>Centre of Excellence</strong> (setting direction, standards, data strategy, shared platforms)
+      and the <strong>operating companies</strong> (implementing standards, owning local use cases, driving adoption).
+      The three-year plan moved from building foundations, to shifting mindsets and scaling, to autonomy and measurable
+      business impact.
+    </p>
+
+    <div class="guest-card">
+      <div class="tag">Guest Lecture</div>
+      <h4>Why digital transformations fail, and what separates the ones that succeed</h4>
+      <p class="by">Mary Meaney, former Senior Partner at McKinsey &amp; Company; Board Member of the Imperial College Council and Imperial College Business School; Non-Executive Director, Tilques.</p>
+      <p>
+        Her central argument: digital transformation is not simply a technology challenge. It requires a clear business
+        case, new operating models, data and analytics capabilities, cultural change, investment in talent, leadership
+        alignment, and the organisational ability to scale new ways of working. Disruption intensifies
+        winner-takes-all dynamics. Digital leaders consistently outperform peers on revenue growth and total returns.
+      </p>
+      <p>
+        Yet 70% of traditional change programmes fail, and digital transformations are even harder. Meaney identified
+        four recurring failure modes (poor resource allocation, stunted delivery and scaling, organisational conflict,
+        and a failure to create value) and a five-stage journey: <strong>Aspire, Assess, Architect, Act, Advance.</strong>
+        People change behaviour when four conditions are met: leaders and peers model it, employees believe in it, they
+        have the skills to act, and processes and incentives reinforce it.
+      </p>
+    </div>
+
+    <h4>Disruption in practice: Gillette, Kodak, and Apple</h4>
+    <div class="insights">
+      <div class="insight">
+        <div class="num"><small>Case</small>01</div>
+        <div class="body"><strong>Gillette vs. Dollar Shave Club &amp; Harry's.</strong> In a commoditised category, customers may value price, convenience, and simplicity over incremental technical improvement. R&amp;D and brand advertising are not always the right defence; patents slow rivals but don't fix a business-model problem.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Case</small>02</div>
+        <div class="body"><strong>Kodak.</strong> Invented digital photography in 1975 but refused to develop it, fearing cannibalisation of film. It created the future but was paralysed by its past, bankrupt by 2012.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Case</small>03</div>
+        <div class="body"><strong>Apple &amp; the iPod.</strong> Apple let the iPhone and streaming erode the iPod's relevance, cannibalising its own product before competitors could. Sometimes you need the courage to disrupt yourself.</div>
+      </div>
+    </div>
+
+    <div class="reflection">
+      <h5>For Laerdal Medical</h5>
+      <p>
+        MAF's Centre-of-Excellence model maps cleanly onto us: a central data and analytics function setting standards,
+        governance, and shared platforms, while Laerdal Medical, Global Health, and the regions own their local use
+        cases and adoption. Meaney's "change story" matters just as much. Any transformation here needs a compelling,
+        repeatable narrative that leaders and peers visibly model, not just a roadmap.
+      </p>
+      <p>
+        And Kodak is the cautionary tale I'd put in front of leadership. We cannot let a profitable hardware business
+        quietly veto the software, data, and subscription models the market is moving toward. Better we cannibalise
+        ourselves, on our own terms and timeline, as Apple did with the iPod, than wait for a digital-only entrant to
+        do it for us.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SESSION 4 ============ -->
+  <section class="day-card" id="s4">
+    <h3><span class="day">Session 4 · May 21</span>Klöckner, Citi TTS, and inventing the future</h3>
+
+    <h4>Klöckner &amp; Co: transformation in a traditional industry</h4>
+    <p>
+      Klöckner demonstrates that digital transformation must be a CEO-level priority, not a delegated technology
+      initiative. Gisbert Rühl personally championed the effort, convinced that companies must disrupt their own
+      industries before others do. Rather than wait for challengers, Klöckner launched two initiatives: kloeckner.i,
+      an internal transformation unit, and XOM Materials, an independent B2B platform aiming to become the "Amazon of
+      the steel trade." Situating the innovation unit in Berlin created enough distance for a startup culture while
+      retaining access to industry expertise. Rühl promoted hierarchy-free communication, used Yammer and
+      #AskYourCEO, and gave job-security assurances to encourage participation in digital training. Substance must
+      take precedence over symbolism, and financial returns may lag investment.
+    </p>
+
+    <h4>Citigroup TTS: from products to platform</h4>
+    <p>
+      Citi's Treasury and Trade Solutions offers a compelling case in business-model transformation. After the
+      financial crisis, Citi needed businesses that were resilient, capital-efficient, and globally relevant. TTS had
+      strong foundations: global reach, client trust, transaction flows, liquidity relevance. Its strategic insight
+      was to identify its "unequal moment": a convergence of digitisation, globalisation, urbanisation, regulation,
+      liquidity demand, and platform economics. The vision became <em>"the Financial Platform for Global Commerce"</em>
+     , shifting from selling discrete products to enabling global flows through connectivity, data, APIs, partnerships,
+      and network effects.
+    </p>
+
+    <div class="pullquote" style="margin-left:auto;margin-right:auto;max-width:640px;">
+      Transformation demanded the ability to inspire 30,000 employees, built on trust, empathy, credibility,
+      collaboration, optimism, diversity, humility, and resolve.
+    </div>
+
+    <div class="insights">
+      <div class="insight">
+        <div class="num"><small>Result</small>01</div>
+        <div class="body"><strong>Over $12B in revenue and $4B in net income</strong>. TTS became one of Citi's most valuable businesses.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Result</small>02</div>
+        <div class="body"><strong>26 consecutive quarters of revenue growth</strong>, with 45% operating efficiency and ~40% return on capital.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Lesson</small>03</div>
+        <div class="body"><strong>Digital transformation succeeds when it drives business-model transformation</strong>, not when treated as a technology upgrade. Find the structural advantages, connect them to long-term trends, and align culture, operating model, technology, and investment behind a clear vision.</div>
+      </div>
+    </div>
+
+    <h4>BlackBerry vs. iPhone</h4>
+    <p>
+      BlackBerry once held ~50% of the US smartphone market. Its decline came from resistance to touchscreens, an
+      overly narrow corporate focus, a weak app ecosystem, and a dismissal of the iPhone as a credible threat. Apple
+      treated the iPhone as a platform rather than a device; the App Store created a powerful ecosystem. The core
+      lesson, a textbook Innovator's Dilemma, is that BlackBerry protected its past, while Apple invented the future.
+    </p>
+
+    <div class="guest-card">
+      <div class="tag">Guest Lecture</div>
+      <h4>Why the future of work needs pro-human leaders</h4>
+      <p class="by">Robert Garlick, former Head of Innovation, Technology &amp; the Future of Work at Citi Global Insights.</p>
+      <p>
+        Garlick argues AI is not simply a productivity tool but a force that could reshape employment, wages,
+        inequality, and capitalism itself. A key concern is a <strong>K-shaped future</strong>, in which some
+        countries, companies, and workers benefit enormously while others are left behind, with risks of wage
+        pressure, worker backlash, asset bubbles, and an "economic singularity."
+      </p>
+      <p>
+        The proposed response is <strong>pro-human leadership</strong>: design AI adoption around better jobs, not
+        efficiency alone. Deploy AI to reduce drudgery, improve job quality, and create new roles and revenue streams,
+        while investing in upskilling, apprenticeships, safety nets, and giving workers a genuine voice. AI leadership
+        cannot be purely technical or financial; it must be shaped around human dignity, shared prosperity, and worker
+        agency.
+      </p>
+    </div>
+
+    <div class="reflection">
+      <h5>For Laerdal Medical</h5>
+      <p>
+        Citi TTS is the most directly transferable case. It reframed a product business as "the platform for global
+        commerce." Our equivalent ambition could be to become the <strong>platform for healthcare education and patient
+        safety</strong>: recurring relationships, APIs, and partnerships with network effects, rather than one-off
+        device sales. Klöckner adds that this has to be CEO-sponsored, and may need a protected, startup-paced unit to
+        incubate; BlackBerry warns against dismissing VR/AR and digital-only training entrants as not-serious.
+      </p>
+      <p>
+        Garlick's pro-human framing fits Laerdal almost perfectly, given our mission of helping save lives. We should
+        deploy AI to take drudgery out of educators' work (debrief notes, documentation, scoring) so they spend more
+        time on the human craft of teaching, not less. AI adoption here should be measured by better jobs and better
+        learning, not headcount efficiency.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SESSION 5 ============ -->
+  <section class="day-card" id="s5">
+    <h3><span class="day">Session 5 · May 28</span>Ping An, the future of money, and leading from the front</h3>
+
+    <h4>Ping An: technology as the operating system of transformation</h4>
+    <p>
+      Ping An Technology was not simply an internal IT department. It became the central strategic engine that helped
+      Ping An Group transform from a traditional insurer into a multi-sector digital ecosystem player across finance,
+      healthcare, automobile, real estate, and smart city. It gave the Group a shared digital backbone: data, AI, cloud,
+      blockchain, facial and voice recognition, and incubation capability. The vivid metaphor: Ping An operates like a
+      digitally enabled "organism": AI as the brain, cloud as the body, blockchain as the connective network.
+    </p>
+    <p>
+      The ecosystem model rests on the idea that customers don't only enter through insurance or banking. They may
+      first arrive through healthcare advice (platforms such as Good Doctor), auto services, or smart-city interactions
+     , and once trust is built, Ping An can cross-sell financial products. The flywheel is powerful: in 2019, 74
+      million customers held contracts with more than one Ping An company. Ping An built much in-house because generic
+      tools weren't accurate enough for Asian faces or Chinese dialects, then reused those capabilities across the
+      Group and commercialised some externally via OneConnect.
+    </p>
+
+    <div class="insights">
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>01</div>
+        <div class="body"><strong>Technology became a strategic platform, not a support function.</strong> One investment could serve insurance, banking, health, auto, housing, and city services.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>02</div>
+        <div class="body"><strong>Move upstream in the customer journey.</strong> Build platforms first, attract users, monetise later through financial-services relationships.</div>
+      </div>
+      <div class="insight">
+        <div class="num"><small>Takeaway</small>03</div>
+        <div class="body"><strong>Leadership enabled it</strong>: long-term investment (1% of revenue in R&amp;D), aggressive goals, openness to outside talent, and overcoming "not invented here" thinking.</div>
+      </div>
+    </div>
+
+    <div class="guest-card">
+      <div class="tag">Guest Lecture</div>
+      <h4>Bringing coherence to chaos: the path to the future financial system</h4>
+      <p class="by">A guest lecture on how the global financial system is evolving in a digital world.</p>
+    </div>
+
+    <p>
+      Finance is entering a new frontier shaped by the interaction between society, the economy, and the financial
+      system. Money remains fundamentally a social convention, a unit of account, medium of exchange, and store of
+      value, whose strength depends on trust, acceptance, and network effects. The rise of cryptocurrencies has
+      created both opportunity and fragmentation, raising regulatory concerns around fraud, AML, taxation, and
+      systemic risk. Stablecoins can make global transactions faster and cheaper, but still depend on trusted
+      custodians, audits, and oversight. Tokenisation of real-world assets could improve liquidity, access, and
+      transparency, though interoperability, cyber risk, and custody remain challenges.
+    </p>
+
+    <div class="pullquote" style="margin-left:auto;margin-right:auto;max-width:640px;">
+      The future financial system is likely to be hybrid: central bank money at the core, combined with the
+      programmability, composability, and efficiency of digital technologies.
+    </div>
+
+    <p>
+      CBDCs and digital assets are not just technology projects but part of a broader digital-policy agenda. Successful
+      CBDC adoption would require clear use cases, simple onboarding, strong user experience, merchant integration,
+      trust, incentives, and partnerships with existing payment infrastructure. Regulation of digital assets has
+      accelerated globally between 2019 and 2025. The future of finance will depend on balancing innovation with
+      trust, safety, regulation, and public accountability.
+    </p>
+
+    <figure class="inline">
+      <div class="frame"><img src="images/session5.jpg" alt="Session 5 in progress" /></div>
+      <figcaption>Session 5, closing the module.</figcaption>
+    </figure>
+
+    <h4>Leading from the front to change culture</h4>
+    <p>
+      The module closed on leadership, principles that are not just universal but transformative. At the heart of
+      great leadership lie four pillars: consistency, fairness, emotional intelligence, and collective ownership. These
+      are not abstract ideals; they are daily choices that define who you are as a leader and endure long after you
+      have left the stage.
+    </p>
+
+    <div class="principles">
+      <div class="principle"><h5>Trust</h5><p>Be dependable and transparent, so people don't second-guess your intentions.</p></div>
+      <div class="principle"><h5>Empathy</h5><p>Challenge problems directly while respecting people, tough on issues, not on individuals.</p></div>
+      <div class="principle"><h5>Credibility</h5><p>Align words with actions; what you say and what you do should not diverge.</p></div>
+      <div class="principle"><h5>Collaboration</h5><p>Create a culture of shared success by giving credit rather than assigning blame.</p></div>
+      <div class="principle"><h5>Optimism</h5><p>Maintain belief in progress and help others feel that tomorrow can be better.</p></div>
+      <div class="principle"><h5>Diversity</h5><p>Value difference in all its forms and recognise the strength of varied perspectives.</p></div>
+      <div class="principle"><h5>Equality</h5><p>Treat everyone fairly and consistently, without favouritism.</p></div>
+      <div class="principle"><h5>Collective ownership</h5><p>Model the behaviours that build a healthier, more inclusive, accountable culture.</p></div>
+    </div>
+
+    <div class="reflection">
+      <h5>For Laerdal Medical</h5>
+      <p>
+        Ping An's flywheel is worth studying: enter the customer journey <em>upstream</em> and build trust before
+        monetising, then reuse the same platform capabilities across every business line instead of rebuilding them.
+        For us that means meeting learners early (nursing students, community health workers) and letting one shared
+        backbone of content, data, and analytics serve Laerdal Medical, Global Health, and the regions alike, rather
+        than each product reinventing its own.
+      </p>
+      <p>
+        On leadership, the closing principles read like a culture brief for Laerdal: trust, empathy, credibility,
+        collaboration, optimism, diversity, and equality are the behaviours that decide whether any of the strategy
+        above actually happens. When you truly embrace them, you become more than a leader, you become a force for
+        good, and the people who walk alongside you are better for it, professionally and personally.
+      </p>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ GALLERY / CLOSING GROUP PHOTO ============ -->
+<section class="gallery-section" id="beyond">
+  <div class="gallery-head">
+    <h2>Until next time</h2>
+    <p>Five sessions, one cohort, and a shared conviction that leadership is what turns technology into value.</p>
+  </div>
+  <div class="gallery-solo">
+    <figure><img src="images/group-photo-2.jpg" alt="Cohort group photo at the end of the course" /></figure>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing" id="reflection">
+  <h2>Digital change is a leadership challenge, never a narrow technical one.</h2>
+  <p>
+    The future economy will be shaped by platforms, data, AI, digital money, interoperable infrastructure, and
+    ecosystem-driven value creation. Success will belong to those leaders, institutions, and governments that move
+    decisively beyond legacy structures, build the right capabilities, and design systems that are inclusive,
+    resilient, and built to adapt in a world that will not stand still.
+  </p>
+  <p style="margin-top: 24px;">
+    Happy to share slides, case readings, or compare notes on how any of this applies to a current project.
+  </p>
+
+  <a class="email-cta" href="mailto:yuanzhen.cai@laerdal.com">
+    <span aria-hidden="true">✉</span>
+    <span>yuanzhen.cai@laerdal.com</span>
+    <span class="email-cta-arrow" aria-hidden="true">→</span>
+  </a>
+</section>
+
+<footer>
+  <div class="divider"></div>
+  <div>Yuanzhen Cai · Imperial College London MBA</div>
+  <div style="margin-top: 6px;">Strategy &amp; Leadership in a Digital World · Naveed Sultan, former Chairman of Citi</div>
+</footer>
+
+<script>
+  (function () {
+    const motionOK = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+
+    if (motionOK && 'IntersectionObserver' in window) {
+      const revealTargets = document.querySelectorAll(
+        'figure, .day-card, .pullquote, .closing h2, .closing p, .email-cta, .learnings > h2, .learnings > .section-lede, .guest-card, .reflection, .insight, .duo .frame, .gallery-head, .gallery-solo figure, .prof, .principle'
+      );
+      revealTargets.forEach(el => el.classList.add('reveal'));
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+      revealTargets.forEach(el => io.observe(el));
+    }
+
+    const nav = document.querySelector('.nav');
+    if (nav) {
+      const onScroll = () => {
+        if (window.scrollY > 12) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+  })();
+</script>
+</body>
+</html>
